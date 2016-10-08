@@ -1,4 +1,5 @@
 /target/
+<<<<<<< HEAD
 .metadata
 bin/
 tmp/
@@ -49,3 +50,5 @@ local.properties
 
 # Code Recommenders
 .recommenders/
+=======
+>>>>>>> config/rest

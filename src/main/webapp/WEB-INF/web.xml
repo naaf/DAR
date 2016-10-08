@@ -7,12 +7,29 @@
 
 	<display-name>Archetype Created Web Application</display-name>
 
+
+	<servlet>
+		<servlet-name>MyApplication</servlet-name>
+		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>jersey.config.server.provider.packages</param-name>
+			<param-value>upmc.stl2.dar.rest.api</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyApplication</servlet-name>
+		<url-pattern>/api/*</url-pattern>
+	</servlet-mapping>
+	<!-- servlet -->
+
 	<servlet>
 		<servlet-name>MyServlet</servlet-name>
 		<servlet-class>upmc.stl2.dar.servlet.MyServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>MyServlet</servlet-name>
-		<url-pattern>/MyServlet</url-pattern>
+		<url-pattern>/myServlet</url-pattern>
 	</servlet-mapping>
+
+
 </web-app>
